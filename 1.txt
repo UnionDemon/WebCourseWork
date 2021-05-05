@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+Hello
+</body>
+</html>
+
+var htmlCode=$("#code").val()
+$("#testPage").attr("scrdoc", htmlCode)
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<title>asdfadsf</title>
+</head>
+<body>
+Hello
+</body>
+</html>
