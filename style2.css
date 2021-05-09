@@ -36,7 +36,10 @@ a:visited {
 
 .nav-item:hover {
     background-color: #007acc;
+}
 
+.nav-item.inactive:hover {
+    background-color: #2d2d30;
 }
 
 #navigation
@@ -134,7 +137,7 @@ a:visited {
     resize: none;
 }
 
-#codeForm
+.codeForm
 {
     width: 600px;
     max-width: 100%;
@@ -182,4 +185,28 @@ a:visited {
 
 .article_card:hover {
     background-color: #007acc;
+}
+
+.lp
+{
+    width: 250px;
+    height: 30px;
+    font-family: Arial;
+    font-size: 20px;
+
+    background-color: #2d2d30;
+    color: white;
+
+    border: none;
+    border-bottom: 3px solid black;
+
+    outline: none;
+}
+
+.lp.title
+{
+    width: 100%;
+    font-family: Arial;
+    font-size: 20px;
+    margin-bottom: 20px;
 }

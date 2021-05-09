@@ -52,24 +52,13 @@
 
         </div>
         <div id="info">
-            <?php
-                $query = "SELECT * FROM articles";
-                $statement = $_db->prepare($query);
-                $statement->execute();
-                $res = $statement->fetchAll(PDO::FETCH_ASSOC);
-
-                foreach ($res as $row)
-                {
-                    ?>
-                        <div class="article_card">
-                            <h3><a href='/article.php?id=<?= $row["id"] ?>'><?= $row["title"] ?></a></h3>
-                        </div>
-                    <?php
-                }
-
-            ?>
-
-
+            <form action="/lib/log.php" method="post">
+                <p>Логин:</p>
+                <input class="lp" type="text" name="login">
+                <p>Пароль:</p>
+                <input class="lp" type="text" name="passwd"><br><br>
+                <input class="btn" type="submit" value="Войти">
+            </form>
         </div>
         <div class="clear"></div>
     </div>

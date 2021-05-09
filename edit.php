@@ -1,8 +1,12 @@
 <?php
-    require_once("lib/db.php");
     require_once ("lib/util.php");
+    require_once ("lib/error.php");
 
     $status=authStatus();
+    if ($status["authorized"] === false)
+    {
+        error_page("У Вас нет доступа к этой странице", "/index.php");
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -52,24 +56,12 @@
 
         </div>
         <div id="info">
-            <?php
-                $query = "SELECT * FROM articles";
-                $statement = $_db->prepare($query);
-                $statement->execute();
-                $res = $statement->fetchAll(PDO::FETCH_ASSOC);
-
-                foreach ($res as $row)
-                {
-                    ?>
-                        <div class="article_card">
-                            <h3><a href='/article.php?id=<?= $row["id"] ?>'><?= $row["title"] ?></a></h3>
-                        </div>
-                    <?php
-                }
-
-            ?>
-
-
+            <form class="codeForm" action="/lib/publish.php" method="post">
+                <input class="lp title" name="title" type="text">
+                <textarea id="code" name="content"></textarea><br>
+                <input class="btn" id="createBtn" type="submit" value="Создать">
+            </form>
+            <div class="clear"></div>
         </div>
         <div class="clear"></div>
     </div>

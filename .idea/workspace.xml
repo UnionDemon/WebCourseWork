@@ -1,7 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="15ca9d10-2b87-4a5a-a2d3-e9429670d9a7" name="Default Changelist" comment="" />
+    <list default="true" id="15ca9d10-2b87-4a5a-a2d3-e9429670d9a7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/log.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/publish.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/register.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/util.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reg.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e78a5e2e-544b-4978-854f-b46db7fc2dce.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e78a5e2e-544b-4978-854f-b46db7fc2dce.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/article.php" beforeDir="false" afterPath="$PROJECT_DIR$/article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/articles.php" beforeDir="false" afterPath="$PROJECT_DIR$/articles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/1.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style2.css" beforeDir="false" afterPath="$PROJECT_DIR$/style2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validator.php" beforeDir="false" afterPath="$PROJECT_DIR$/validator.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,7 +53,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ryTpJFpsL7Y4WT0ZYw1CiAG4KM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -48,11 +88,23 @@
       <workItem from="1620107004269" duration="113000" />
       <workItem from="1620107834587" duration="686000" />
       <workItem from="1620194908563" duration="19030000" />
+      <workItem from="1620536716864" duration="19525000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1619950045301">
@@ -63,37 +115,37 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1620107919483" />
-    <state width="1024" height="210" key="GridCell.Tab.0.bottom" timestamp="1620200735363">
+    <state width="1024" height="210" key="GridCell.Tab.0.bottom" timestamp="1620545481105">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620200735363" />
-    <state width="1024" height="210" key="GridCell.Tab.0.center" timestamp="1620200735363">
+    <state width="1024" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620545481105" />
+    <state width="1024" height="210" key="GridCell.Tab.0.center" timestamp="1620545481105">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1620200735363" />
-    <state width="1024" height="210" key="GridCell.Tab.0.left" timestamp="1620200735363">
+    <state width="1024" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1620545481105" />
+    <state width="1024" height="210" key="GridCell.Tab.0.left" timestamp="1620545481105">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1620200735363" />
-    <state width="1024" height="210" key="GridCell.Tab.0.right" timestamp="1620200735363">
+    <state width="1024" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1620545481105" />
+    <state width="1024" height="210" key="GridCell.Tab.0.right" timestamp="1620545481105">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1620200735363" />
-    <state x="604" y="335" key="NewPhpFileDialog" timestamp="1620211309956">
+    <state width="1024" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1620545481105" />
+    <state x="604" y="335" key="NewPhpFileDialog" timestamp="1620557379865">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="604" y="335" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1620211309956" />
-    <state x="277" y="57" key="SettingsEditor" timestamp="1620195548943">
+    <state x="604" y="335" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1620557379865" />
+    <state x="277" y="57" key="SettingsEditor" timestamp="1620558489556">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1620195548943" />
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1620558489556" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1620213593723">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1620213593723" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1620213616930">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1620558097330">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1620213616930" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1620558097330" />
   </component>
 </project>
