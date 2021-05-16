@@ -1,12 +1,38 @@
 <?php
     require_once ("lib/util.php");
     require_once ("lib/error.php");
+    require_once ("lib/db.php");
 
     $status=authStatus();
-    if ($status["authorized"] === false)
+    if ($status["isAdmin"] === false)
     {
         error_page("У Вас нет доступа к этой странице", "/index.php");
     }
+
+    $action="/lib/publish.php";
+    $title="";
+    $content="";
+    $submit="Создать";
+
+    if(isset($_GET["id"]))
+    {
+        $action="/lib/change.php";
+
+        $query="SELECT * FROM articles WHERE id=?";
+        $statement=$_db->prepare($query);
+        $statement->execute([$_GET["id"]]);
+        $result=$statement->fetch(PDO::FETCH_ASSOC);
+
+        if($result === false)
+        {
+            error_page("Такой статьи не существует", "/articles.php");
+        }
+
+        $title=$result["title"];
+        $content=$result["content"];
+        $submit="Редактировать";
+    }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -34,6 +60,7 @@
             if ($status["isAdmin"] === true)
             {
                 ?>
+                <p class="nav-item"><a href = "/gallery.php">Галерея</a></p>
                 <p class="nav-item"><a href = "/edit.php">Создать статью</a></p>
                 <?php
             }
@@ -56,10 +83,11 @@
 
         </div>
         <div id="info">
-            <form class="codeForm" action="/lib/publish.php" method="post">
-                <input class="lp title" name="title" type="text">
-                <textarea id="code" name="content"></textarea><br>
-                <input class="btn" id="createBtn" type="submit" value="Создать">
+            <form class="codeForm" action='<?= $action ?>' method="post">
+                <input class="lp title" name="title" type="text" value='<?= $title ?>'>
+                <textarea id="code" name="content"><?= $content ?></textarea><br>
+                <input class="btn" id="createBtn" type="submit" value='<?= $submit ?>'>
+                <input type="hidden" name="articleId" value='<?= $_GET["id"]?>'>
             </form>
             <div class="clear"></div>
         </div>

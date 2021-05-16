@@ -30,6 +30,7 @@
             if ($status["isAdmin"] === true)
             {
                 ?>
+                <p class="nav-item"><a href = "/gallery.php">Галерея</a></p>
                 <p class="nav-item"><a href = "/edit.php">Создать статью</a></p>
                 <?php
             }

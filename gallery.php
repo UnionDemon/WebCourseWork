@@ -1,8 +1,13 @@
 <?php
     require_once("lib/db.php");
     require_once ("lib/util.php");
+    require_once ("lib/error.php");
 
     $status=authStatus();
+    if($status["isAdmin"] == false)
+    {
+        error_page("Доступ к данной странице запрещен.", "/index.php");
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,6 +15,21 @@
     <meta charset="UTF-8">
     <title>HTML 5</title>
     <link rel="stylesheet" type="text/css" href="/style2.css">
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(
+            function ()
+            {
+                $(".linkBtn").click(
+                    function () {
+                        var link = $(this).attr("src")
+                        $("#nested_img").attr("src", link)
+                        $("#nested_img").show()
+                    }
+                )
+            }
+        )
+    </script>
 </head>
 <body>
     <div id="main">
@@ -53,24 +73,33 @@
 
         </div>
         <div id="info">
-            <h1>Последние публикации:</h1>
+            <h1>Загрузить файл</h1>
+            <form action="/upload.php" method="POST" enctype="multipart/form-data">
+                <input type="file" name="uploadable"><br>
+                <input type="submit" value="Загрузить" class="btn">
+            </form>
 
-            <?php
-                $query = "SELECT * FROM articles ORDER BY publish_date DESC LIMIT 2;";
-                $statement = $_db->prepare($query);
-                $statement->execute();
-                $res = $statement->fetchAll(PDO::FETCH_ASSOC);
+            <h1>Загруженные на сайт файлы</h1>
 
-                foreach ($res as $row)
-                {
-                    ?>
-                        <div class="article_card">
-                            <h3><a href='/article.php?id=<?= $row["id"] ?>'><?= htmlentities($row["title"]) ?></a></h3>
-                        </div>
-                    <?php
-                }
+            <div id="gallery_container">
+                <div class="fileList">
+                    <ul id="fileUl">
+                        <?php
+                        $files=scandir("gallery");
+                        foreach ($files as $file)
+                        {
+                            if ($file === "." || $file === "..")
+                            {
+                                continue;
+                            }
+                            echo "<li><span class='linkBtn' src='/gallery/".$file."'>".$file."</span></li>";
+                        }
+                        ?>
+                    </ul>
+                </div>
+                <div class="show"><img id="nested_img" src="/gallery/head.jpg" hidden></div>
+            </div>
 
-            ?>
 
 
         </div>

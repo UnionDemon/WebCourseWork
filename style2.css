@@ -118,8 +118,10 @@ a:visited {
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: block;
     font-size: 16px;
+
+    margin-top: 10px;
 }
 
 .btn:hover
@@ -130,7 +132,7 @@ a:visited {
 #code
 {
     width: 100%;
-    height: 600px;
+    height: 400px;
 
     font-family: monospace;
     font-size: 20px;
@@ -139,7 +141,7 @@ a:visited {
 
 .codeForm
 {
-    width: 600px;
+    width: 400px;
     max-width: 100%;
     margin: 20px;
     float: left;
@@ -147,11 +149,11 @@ a:visited {
 
 #testPage
 {
-    width: 600px;
+    width: 400px;
     max-width: 100%;
     background-color: white;
     margin: 20px;
-    height: 600px;
+    height: 400px;
 }
 
 #alerts
@@ -165,8 +167,7 @@ a:visited {
     padding-top: 15px;
     padding-bottom: 15px;
     margin: 20px;
-    width: 1240px;
-    max-width: 100%;
+    width: 90%;
 }
 
 .article_card {
@@ -209,4 +210,58 @@ a:visited {
     font-family: Arial;
     font-size: 20px;
     margin-bottom: 20px;
+}
+
+.fileList{
+    background-color: #2d2d30;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 0 black;
+    box-sizing: border-box;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+}
+
+#fileUl
+{
+    height: 270px;
+    margin: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+.show {
+    background-color: #2d2d30;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 0 black;
+    box-sizing: border-box;
+    padding: 0;
+    height: 300px;
+    width: 300px;
+    float: right;
+    margin: 20px;
+    overflow: hidden;
+}
+
+#nested_img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#gallery_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.linkBtn:hover {
+    color: #007acc;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid white;
 }

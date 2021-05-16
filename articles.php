@@ -30,6 +30,7 @@
             if ($status["isAdmin"] === true)
             {
                 ?>
+                <p class="nav-item"><a href = "/gallery.php">Галерея</a></p>
                 <p class="nav-item"><a href = "/edit.php">Создать статью</a></p>
                 <?php
             }
@@ -62,7 +63,7 @@
                 {
                     ?>
                         <div class="article_card">
-                            <h3><a href='/article.php?id=<?= $row["id"] ?>'><?= $row["title"] ?></a></h3>
+                            <h3><a href='/article.php?id=<?= $row["id"] ?>'><?= htmlentities($row["title"]) ?></a></h3>
                         </div>
                     <?php
                 }

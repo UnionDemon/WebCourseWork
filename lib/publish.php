@@ -6,12 +6,11 @@
     {
         error_page("Не все поля заполнены.", "/edit.php");
     }
-
-    //$content = $_db->quote($_POST["content"]);
     $content = $_POST["content"];
 
-    $query="INSERT INTO articles(title, content, publish_date) VALUES ('".$_POST["title"]."', '".$content."', NOW())";
+    $query="INSERT INTO articles(title, content, publish_date) VALUES (?, ?, NOW())";
+
     $statement = $_db->prepare($query);
-    $statement->execute();
+    $statement->execute([$_POST["title"], $_POST["content"]]);
 
     header("Location: /articles.php");
