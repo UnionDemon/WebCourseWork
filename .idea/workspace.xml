@@ -20,21 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15ca9d10-2b87-4a5a-a2d3-e9429670d9a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/delete.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gallery.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/change.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/cw.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cw.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/article.php" beforeDir="false" afterPath="$PROJECT_DIR$/article.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/articles.php" beforeDir="false" afterPath="$PROJECT_DIR$/articles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gallery.php" beforeDir="false" afterPath="$PROJECT_DIR$/gallery.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/publish.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/publish.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/error.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/error.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reg.php" beforeDir="false" afterPath="$PROJECT_DIR$/reg.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style2.css" beforeDir="false" afterPath="$PROJECT_DIR$/style2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/1.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/validator.php" beforeDir="false" afterPath="$PROJECT_DIR$/validator.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,6 +86,13 @@
       <workItem from="1621145473388" duration="249000" />
       <workItem from="1621147148574" duration="15953000" />
       <workItem from="1621178487348" duration="2439000" />
+      <workItem from="1621259028546" duration="6710000" />
+      <workItem from="1621946499807" duration="3113000" />
+      <workItem from="1622001554930" duration="3376000" />
+      <workItem from="1622029570187" duration="690000" />
+      <workItem from="1622035107287" duration="1665000" />
+      <workItem from="1622482106884" duration="4687000" />
+      <workItem from="1622511606789" duration="655000" />
     </task>
     <servers />
   </component>
@@ -118,22 +120,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1620107919483" />
-    <state width="1024" height="210" key="GridCell.Tab.0.bottom" timestamp="1621162103709">
+    <state width="1024" height="210" key="GridCell.Tab.0.bottom" timestamp="1621260438723">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1621162103709" />
-    <state width="1024" height="210" key="GridCell.Tab.0.center" timestamp="1621162103709">
+    <state width="1024" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1621260438723" />
+    <state width="1024" height="210" key="GridCell.Tab.0.center" timestamp="1621260438723">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1621162103709" />
-    <state width="1024" height="210" key="GridCell.Tab.0.left" timestamp="1621162103709">
+    <state width="1024" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1621260438723" />
+    <state width="1024" height="210" key="GridCell.Tab.0.left" timestamp="1621260438723">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1621162103709" />
-    <state width="1024" height="210" key="GridCell.Tab.0.right" timestamp="1621162103709">
+    <state width="1024" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1621260438723" />
+    <state width="1024" height="210" key="GridCell.Tab.0.right" timestamp="1621260438723">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1024" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1621162103709" />
+    <state width="1024" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1621260438723" />
     <state x="604" y="335" key="NewPhpFileDialog" timestamp="1621156523775">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

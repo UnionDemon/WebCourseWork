@@ -8,7 +8,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>HTML 5</title>
+    <title>HTML 5 - Главная</title>
     <link rel="stylesheet" type="text/css" href="/style2.css">
 </head>
 <body>

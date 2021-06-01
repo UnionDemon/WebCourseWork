@@ -38,7 +38,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>HTML 5</title>
+    <title>HTML 5 - Создание/Редактирование статьи</title>
     <link rel="stylesheet" type="text/css" href="/style2.css">
 </head>
 <body>
@@ -85,7 +85,7 @@
         <div id="info">
             <form class="codeForm" action='<?= $action ?>' method="post">
                 <input class="lp title" name="title" type="text" value='<?= $title ?>'>
-                <textarea id="code" name="content"><?= $content ?></textarea><br>
+                <textarea id="code" name="content"><?= htmlentities($content) ?></textarea><br>
                 <input class="btn" id="createBtn" type="submit" value='<?= $submit ?>'>
                 <input type="hidden" name="articleId" value='<?= $_GET["id"]?>'>
             </form>

@@ -13,7 +13,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>HTML 5</title>
+    <title>HTML 5 - Галерея</title>
     <link rel="stylesheet" type="text/css" href="/style2.css">
     <script src="jquery-3.6.0.js"></script>
     <script>

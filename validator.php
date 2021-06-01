@@ -12,7 +12,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>HTML 5</title>
+    <title>HTML 5 - Тренажер/Валидатор</title>
     <link rel="stylesheet" type="text/css" href="/style2.css">
     <script src="jquery-3.6.0.js"></script>
     <script>
@@ -109,6 +109,7 @@
 
         </div>
         <div id="info">
+            <h1>Тренажер/Валидатор HTML5</h1>
             <form class="codeForm">
                 <textarea id="code"></textarea><br>
                 <input class="btn" id="testBtn" type="button" value="Показать">

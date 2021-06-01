@@ -8,7 +8,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>HTML 5</title>
+    <title>HTML 5 - Каталог статей</title>
     <link rel="stylesheet" type="text/css" href="/style2.css">
 </head>
 <body>
@@ -53,6 +53,7 @@
 
         </div>
         <div id="info">
+            <h1>Каталог статей</h1>
             <?php
                 $query = "SELECT * FROM articles";
                 $statement = $_db->prepare($query);

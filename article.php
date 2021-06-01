@@ -10,13 +10,21 @@
     $statement = $_db->prepare($query);
     $statement->execute();
     $res = $statement->fetch(PDO::FETCH_ASSOC);
-    $content = $res["content"];
+
+    $page_title="";
+    if ($res === false)
+    {
+        $page_title="Несуществующая статья";
+    }
+    else{
+        $page_title=$res["title"];
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title><?= htmlentities($res["title"]) ?></title>
+    <title><?= htmlentities($page_title) ?></title>
     <link rel="stylesheet" type="text/css" href="/style2.css">
 </head>
 <body>
@@ -45,7 +53,7 @@
             ?>
             <hr>
             <?php
-            if ($status["isAdmin"] === true)
+            if ($res!=false && $status["isAdmin"] == true)
             {
                 ?>
                 <p class="nav-item"><a href = '/edit.php?id=<?= $_GET["id"] ?>'>Редактировать статью</a></p>
@@ -83,7 +91,7 @@
                 }
                 else
                 {
-                    ?>
+                    $content = $res["content"];?>
                         <h1><?= htmlentities($res["title"]) ?></h1>
                     <?php
                         $pattern = "%\{code\}([^\{\}]*)\{/code\}%";

@@ -1,6 +1,6 @@
 CREATE TABLE articles
 (
-    id SERIAL,
+    id SERIAL PRIMARY KEY,
     title VARCHAR(500),
     content TEXT,
     publish_date DATETIME
